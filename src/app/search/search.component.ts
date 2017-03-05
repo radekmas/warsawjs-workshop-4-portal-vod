@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
+import {LatestVideoService} from "../video-list/latest-video.service";
 
 @Component({
   selector: 'app-search',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchComponent implements OnInit {
 
-  constructor() { }
+  constructor(private latestVideoService: LatestVideoService) { }
 
   ngOnInit() {
+  }
+
+  search(phrase) {
+    console.log(phrase);
+    var vidoes = this.latestVideoService.searchVideoByTitle(phrase);
+
   }
 
 }

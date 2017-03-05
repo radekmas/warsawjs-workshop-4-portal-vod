@@ -3,11 +3,13 @@ import {RouterModule, Routes} from "@angular/router";
 import {VideoComponent} from "../video/video.component";
 import {VideoListComponent} from "../video-list/video-list.component";
 import {PageNotFoundComponent} from "../page-not-found/page-not-found.component";
+import {SearchComponent} from "../search/search.component";
 
 
 const routes: Routes = [
   { path: '', component: VideoListComponent },
   { path: 'videos/:id', component: VideoComponent },
+  { path: 'search', component: SearchComponent },
   { path: 'page-not-found', component: PageNotFoundComponent },
   { path: "**", redirectTo: "page-not-found" }
 ];

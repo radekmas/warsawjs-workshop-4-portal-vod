@@ -11,6 +11,7 @@ import {AppRoutingModule} from "./app-routing/app-routing.module";
 import {LatestVideoService} from "./video-list/latest-video.service";
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SearchComponent } from './search/search.component';
+import { LatestVideoListComponent } from './latest-video-list/latest-video-list.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SearchComponent } from './search/search.component';
     VideoComponent,
     VideoDetailComponent,
     PageNotFoundComponent,
-    SearchComponent
+    SearchComponent,
+    LatestVideoListComponent
   ],
   imports: [
     BrowserModule,
