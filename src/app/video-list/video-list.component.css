@@ -3,4 +3,12 @@
   float:left;
   font-size: 14px;
   border: 1px solid white;
+  color: white;
+  text-color: white;
+}
+
+.pagination {
+  color: white;
+  text-color: white;
+  border: 1px solid white;
 }

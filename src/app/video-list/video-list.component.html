@@ -1,8 +1,11 @@
+<div style="clear: both"></div>
+<div class="pagination">
+  <pagination-controls (pageChange)="p = $event"></pagination-controls>
+</div>
+
 <div class="video-item"
      *ngFor="let video of videos | paginate: { itemsPerPage: 9, currentPage: p }"
      [routerLink]="['/video', video.id]">
   <app-video-detail [video]="video"> </app-video-detail>
 </div>
 
-<div style="clear: both"></div>
-<pagination-controls (pageChange)="p = $event" id="server"></pagination-controls>
