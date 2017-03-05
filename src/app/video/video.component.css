@@ -1,0 +1,12 @@
+.video-header {
+  text-align: center;
+  margin: 10px;
+  font: 18px bold;
+  background-color: lightyellow;
+}
+
+.video-thumb {
+  max-width: 300px;
+  max-height: 300px;
+  margin: 10px;
+}

@@ -1,5 +1,4 @@
 <div class="video-item" *ngFor="let video of videos">
-  <h4>{{ video.name }}</h4>
-  <video controls class="video-thumb" [src]="video.url"> </video>
+  <app-video [video]="video"> </app-video>
 </div>
 
