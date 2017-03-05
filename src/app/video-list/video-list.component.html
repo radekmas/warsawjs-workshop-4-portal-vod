@@ -1,8 +1,5 @@
-
-<ul>
-    <li
-      *ngFor="let video of videos">
-      {{ video.name }}
-    </li>
-</ul>
+<div class="video-item" *ngFor="let video of videos">
+  <h4>{{ video.name }}</h4>
+  <video controls class="video-thumb" [src]="video.url"> </video>
+</div>
 
