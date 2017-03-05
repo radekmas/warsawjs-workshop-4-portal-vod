@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {LatestVideoService} from "../video-list/latest-video.service";
 
 @Component({
   selector: 'app-latest-video-list',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./latest-video-list.component.css']
 })
 export class LatestVideoListComponent implements OnInit {
+  public videos: any[] = [];
 
-  constructor() { }
+  constructor(private latestVideoService: LatestVideoService) { }
 
   ngOnInit() {
+    this.latestVideoService.getVideos().then((VIDEOS) => {
+      this.videos = VIDEOS;
+    });
   }
 
 }

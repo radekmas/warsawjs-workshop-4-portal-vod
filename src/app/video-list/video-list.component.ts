@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
 import {LatestVideoService} from "./latest-video.service";
 //import { Video } from '../video.service.ts';
 
@@ -9,15 +9,11 @@ import {LatestVideoService} from "./latest-video.service";
   providers: [LatestVideoService]
 })
 export class VideoListComponent implements OnInit {
-  private videos: any[] = [];
+  @Input() videos: any[] = [];
 
-  constructor(private latestVideoService: LatestVideoService) {
-
+  constructor() {
   }
 
   ngOnInit() {
-    this.latestVideoService.getVideos().then((VIDEOS) => {
-      this.videos = VIDEOS;
-    });
   }
 }

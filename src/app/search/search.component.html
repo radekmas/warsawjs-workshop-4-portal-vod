@@ -2,7 +2,7 @@
   <input #phrase
          (keyup.enter)="search(phrase.value)"
          placeholder="Wpisz tytuł filmu..."
-         autofocus/>
+         autofocus
+         class="search-input"/>
 </form>
-
-<app-video-list [videos]="vidoes"></app-video-list>
+<app-video-list [videos]="videos"></app-video-list>

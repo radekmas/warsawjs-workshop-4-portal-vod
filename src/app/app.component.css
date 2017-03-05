@@ -11,3 +11,17 @@
   font: 20px bold;
   text-transform: uppercase;
 }
+
+.menu-item {
+  display: inline-block;
+  font-size: 25px;
+  border-color: black;
+  border: 2px solid;
+  color: white;
+  padding: 10px 10px 10px 10px;
+  margin: 10px;
+  text-decoration: none;
+  text-underline: none;
+  text-align: center;
+  cursor: pointer;
+}
