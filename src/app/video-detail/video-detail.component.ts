@@ -25,7 +25,7 @@ function Print() {
 @Component({
   selector: 'app-video-detail',
   templateUrl: './video-detail.component.html',
-  styleUrls: ['./video-detail.component.css']
+  styleUrls: ['./video-detail.component.css', '../app.component.css']
 })
 
 export class VideoDetailComponent implements OnInit {

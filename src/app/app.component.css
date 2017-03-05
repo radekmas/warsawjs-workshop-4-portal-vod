@@ -1,0 +1,12 @@
+.title {
+  text-align:center;
+}
+
+.video-header {
+  text-align: center;
+  margin: 10px;
+  margin-inside: 10px;
+  font: 20px bold;
+  background-color: lightblue;
+  text-transform: uppercase;
+}

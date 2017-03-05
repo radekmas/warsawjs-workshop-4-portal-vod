@@ -1,9 +1,8 @@
-<div *ngIf="video">
+<div *ngIf="video" class="video">
   <div class="video-header">{{ video.name }}</div>
 
   <video controls
          [poster]="video.thumb"
-         class="video-thumb"
          [src]="video.url">
   </video>
 </div>

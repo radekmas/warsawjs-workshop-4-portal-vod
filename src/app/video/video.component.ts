@@ -6,7 +6,7 @@ import "rxjs/add/operator/switchMap";
 @Component({
   selector: 'app-video',
   templateUrl: './video.component.html',
-  styleUrls: ['./video.component.css']
+  styleUrls: ['./video.component.css', '../app.component.css']
 })
 export class VideoComponent implements OnInit {
   @Input() id;
