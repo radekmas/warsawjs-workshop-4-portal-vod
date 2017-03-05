@@ -3,6 +3,10 @@
   <pagination-controls (pageChange)="p = $event"></pagination-controls>
 </div>
 
+<a class="menu-item" (click)="sortAscending()">Alfabetycznie</a>
+<a class="menu-item" (click)="sortDescending()">Odwrotnie</a>
+
+
 <div class="video-item"
      *ngFor="let video of videos | paginate: { itemsPerPage: 9, currentPage: p }"
      [routerLink]="['/video', video.id]">
