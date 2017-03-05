@@ -9,13 +9,17 @@ import { VideoComponent } from './video/video.component';
 import { VideoDetailComponent } from './video-detail/video-detail.component';
 import {AppRoutingModule} from "./app-routing/app-routing.module";
 import {LatestVideoService} from "./video-list/latest-video.service";
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     VideoListComponent,
     VideoComponent,
-    VideoDetailComponent
+    VideoDetailComponent,
+    PageNotFoundComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

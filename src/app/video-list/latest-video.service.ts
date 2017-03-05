@@ -15,7 +15,7 @@ export class LatestVideoService {
     });
   }
 
-  getVideo(id): Promise<any> {
+  getVideo(id: string): Promise<any> {
     return new Promise((resolve) => {
         return resolve(VIDEOS.find(v => v.id == id));
     });

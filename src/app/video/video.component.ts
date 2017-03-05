@@ -14,7 +14,7 @@ export class VideoComponent implements OnInit {
 
   constructor(private latestVideoService: LatestVideoService,
               private route: ActivatedRoute,
-              router: Router) {
+              private router: Router) {
   }
 
   ngOnInit() {
@@ -22,6 +22,9 @@ export class VideoComponent implements OnInit {
       return this.latestVideoService.getVideo(params['id'])
     }).subscribe(
       video => {
+        if (!video) {
+          return this.router.navigate(['page-not-found']);
+        }
         this.video = video
     });
   }
