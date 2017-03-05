@@ -1,16 +1,5 @@
 import {Injectable} from '@angular/core';
-
-const VIDEOS = [
-  {
-    title: 'La La Land'
-  },
-  {
-    title: 'Moonlight'
-  },
-  {
-    title: 'Skyfall'
-  },
-];
+import {VIDEOS} from "./mock-videos";
 
 @Injectable()
 export class LatestVideoService {
@@ -19,6 +8,10 @@ export class LatestVideoService {
   }
 
   getVideos(): Promise<any[]> {
-    return Promise.resolve(VIDEOS);
+    return new Promise((resolve) => {
+      setTimeout(function () {
+        return resolve(VIDEOS);
+      }, 500);
+    });
   }
 }
