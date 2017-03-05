@@ -14,4 +14,10 @@ export class LatestVideoService {
       }, 500);
     });
   }
+
+  getVideo(id): Promise<any> {
+    return new Promise((resolve) => {
+        return resolve(VIDEOS.find(v => v.id == id));
+    });
+  }
 }

@@ -1,5 +1,9 @@
-<div class="video-header">{{ video.name }}</div>
-<video controls
-       [poster]="video.thumb"
-       class="video-thumb"
-       [src]="video.url"> </video>
+<div *ngIf="video">
+  <div class="video-header">{{ video.name }}</div>
+
+  <video controls
+         [poster]="video.thumb"
+         class="video-thumb"
+         [src]="video.url">
+  </video>
+</div>

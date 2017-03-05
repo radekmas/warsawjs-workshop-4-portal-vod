@@ -1,4 +1,4 @@
-<div class="video-item" *ngFor="let video of videos">
+<div class="video-item" *ngFor="let video of videos" [routerLink]="['/video', video.id]">
   <app-video-detail [video]="video"> </app-video-detail>
 </div>
 

@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { VideoListComponent } from './video-list/video-list.component';
 import { VideoComponent } from './video/video.component';
 import { VideoDetailComponent } from './video-detail/video-detail.component';
+import {AppRoutingModule} from "./app-routing/app-routing.module";
+import {LatestVideoService} from "./video-list/latest-video.service";
 
 @NgModule({
   declarations: [
@@ -18,9 +20,10 @@ import { VideoDetailComponent } from './video-detail/video-detail.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [LatestVideoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
