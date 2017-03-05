@@ -1,10 +1,10 @@
-<div style="clear: both"></div>
+
 <div class="pagination">
   <pagination-controls (pageChange)="p = $event"></pagination-controls>
+  <a class="pagination-item" (click)="sortAscending()" >Alfabetycznie</a>
+  <a class="pagination-item" (click)="sortDescending()">Odwrotnie</a>
 </div>
 
-<a class="menu-item" (click)="sortAscending()">Alfabetycznie</a>
-<a class="menu-item" (click)="sortDescending()">Odwrotnie</a>
 
 
 <div class="video-item"

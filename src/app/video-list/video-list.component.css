@@ -11,4 +11,19 @@
   color: white;
   text-color: white;
   border: 1px solid white;
+  margin: 20px
+}
+
+.pagination-item {
+  display: inline-block;
+  font-size: 15px;
+  border-color: white;
+  border: 1px solid;
+  color: white;
+  padding: 10px 10px 10px 10px;
+  margin: 10px;
+  text-decoration: none;
+  text-underline: none;
+  text-align: center;
+  cursor: pointer;
 }
